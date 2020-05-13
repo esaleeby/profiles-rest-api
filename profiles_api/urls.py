@@ -8,6 +8,7 @@ from profiles_api import views
 router = DefaultRouter()
 # (name of url we wish to create, viewset to register to url, base name for viewset)
 router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
+router.register('profile', views.UserProfileViewSet)
 
 
 urlpatterns = [
